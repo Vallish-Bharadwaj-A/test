@@ -21,6 +21,10 @@ const data = {
   "created_at": "2021-05-24T19:10:30Z",
   "updated_at": "2024-10-05T18:57:59Z"
 };
+const data2 = {
+  "name":"Vallish Bharadwaj A",
+  "occupation":"SDE",
+};
 
 app.get("/", (req, res) => {
   res.send("Hello pappu");
@@ -32,6 +36,10 @@ app.get("/login",(req, res) => {
 
 app.get("/github",(req,res)=>{
   res.json(data);
+})
+
+app.get("/vallish",(req,res)=>{
+  res.json(data2);
 })
 
 app.listen(process.env.PORT, () => {
